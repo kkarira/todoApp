@@ -15,3 +15,9 @@ after adding few tasks and marking some tasks as completed.
 
 After deleting some tasks.
 ![image](https://github.com/kkarira/todoApp/assets/42875693/4b6806eb-d2d1-4f2b-b555-7a738c795d61)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+I also have added a functionality which gives a 3 hour prior reminder of the task as shown in the snap-shot.
+![image](https://github.com/kkarira/todoApp/assets/42875693/59ad6e20-c881-410c-b0ca-2d15b7797db8)
+
