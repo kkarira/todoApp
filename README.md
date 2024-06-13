@@ -1,2 +1,2 @@
 # todoApp
-todo listing app
+todo listing app using React-js
