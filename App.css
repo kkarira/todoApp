@@ -1,162 +1,164 @@
-body{
-    background-color: #2b1616;
-    color:white;
-    overflow: hidden;
+
+button {
+  background-color: #f98d8d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+button:hover{
+  background-color: #e60000;
+}
+
+p{
+  color: rgb(162, 160, 156);
+  text-shadow:2ch;
+}
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 200px; /* Set the maximum height for the list */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.icons {
+  display: flex;
+  gap: 10px; /* Space between icons */
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.icon:hover {
+  background-color: #e0e0e0;
+}
+
+.done-icon {
+  color: #4caf50; /* Green color for done */
+}
+
+.delete-icon {
+  color: #ff4d4d; /* Red color for delete */
+}
+
+.edit-icon {
+  color: #ffeb3b; /* Yellow color for edit */
+}
+
+.save-icon {
+  color: #4caf50; /* Green color for save */
+}
+
+.delete-all-button {
+  background-color: #f98d8d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-all-button:hover {
+  background-color: #e60000;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .App {
+    max-width: 80%;
   }
-  
-  h1{
-    text-align: center;
-  }
-  
-  .todo-wrapper{
-  background: #1e0101;
-  padding: 2%;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3%;
-  max-height: 80vh;
-  overflow-y: auto;
-  box-shadow: 0px 5px 7px rgb(27, 27, 27);
-  
-  }
-  
-  .todo-input{
-    display: flex;
-    align-items: center;
+
+  form {
+    flex-direction: row;
     justify-content: center;
-    border-bottom: 1px solid rgb(181, 204, 63);
-    padding-bottom: 25px;
-    margin-bottom: 25px;
   }
-  
-  .todo-input-item{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-right: 25px;
-  }
-  
-  .todo-input-item label{
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .todo-input-item input{
-    padding: 8px;
-    border: none;
-    width: 250px;
-  }
-  
-  .todo-input-item input:focus{
-    outline: 2px solid rgb(11, 26, 19);
-  }
-  
-  .primaryBtn{
-    background-color: rgb(159, 143, 42);
-    color: white;
-    border:none;
-    border-radius: 0px;
-    margin-top: 25px;
-    padding: 10px;
-    width: 60px;
-    cursor: pointer;
-  }
-  
-  .primaryBtn:hover{
-    background-color: rgb(116, 156, 55);
-  }
-  
-  
-  .secondaryBtn{
-    background-color: rgb(71, 71, 71);
-    color: white;
-    border:none;
-    border-radius: 0px;
-    margin-top: 25px;
-    padding: 10px;
-    width: fit-content;
-    cursor: pointer;
-  
-  }
-  
-  .active{
-    background-color: rgb(159, 143, 42);
-  }
-  
-  .todo-list{
-    display: flex;
-    flex-direction: column;
-  
-  }
-  
-  .btn-area{
-    margin-bottom: 15px;
-  }
-  
-  .todo-list-item{
-    background-color: #414040;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    box-shadow: 0px 3px 5px rgb(43, 42, 42);
-  }
-  
-  .todo-list-item h3{
-    font-size: 25px;
-    color: rgb(0,230,122);
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .todo-list-item p{
-    font-size: 14px;
-    color: rgb(161, 161, 161);
-    margin-top: 8px;
-  }
-  
-  .icon{
-    font-size: 35px;
-    cursor: pointer;
-  }
-  
-  .icon:hover{
-    color: red;
-  }
-  
-  .check-icon{
-    font-size: 25px;
-    margin-left: 10px;
-    color:rgb(0,230,122);
-    cursor: pointer;
-  }
-  
-  .check-icon:hover{
-    color: rgb(4, 196, 106);
-  }
-  
-  .edit__wrapper{
-    background-color: #414040;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .edit__wrapper input,.edit__wrapper textarea{
-    border: 1px solid lightgray;
-    padding: 10px;
+
+  input[type="text"],
+  input[type="datetime-local"],
+  button {
     margin: 5px;
-    border-radius: 3px;
+    width: auto;
   }
-  
-  .edit__wrapper .primaryBtn{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    font-size: 16px;
-    width:fit-content;
+
+  .icons {
+    gap: 15px;
   }
+}
+
+@media (min-width: 768px) {
+  .App {
+    max-width: 70%;
+  }
+
+  form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .icons {
+    gap: 20px;
+  }
+}
+
